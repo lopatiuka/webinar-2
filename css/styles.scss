@@ -221,12 +221,52 @@ header {
                 justify-content: center;
                 p {
                     display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
                     align-items: center;
                     font-family: 'Cerebri Sans Pro';
                     color: #3F455D;
                     font-size: 20px;
                     height: 100%;
+                    .header-arrow {
+                        border: solid #3F455D;
+                        border-width: 0 3px 3px 0;
+                        display: inline-block;
+                        margin-left: 10px;
+                        margin-bottom: 5px;
+                        padding: 3px;
+                        transform: rotate(45deg);
+                        -webkit-transform: rotate(45deg);
+                        transition-property: border;
+                        transition-duration: 0.3s;
+                    }
                 } 
+
+                a {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    font-family: 'Cerebri Sans Pro';
+                    color: #3F455D;
+                    font-size: 20px;
+                    height: 100%;
+                    text-decoration: none;
+                    transition-property: color;
+                    transition-duration: 0.3s;
+                    .header-arrow {
+                        border: solid #3F455D;
+                        border-width: 0 3px 3px 0;
+                        display: inline-block;
+                        margin-left: 10px;
+                        margin-bottom: 5px;
+                        padding: 3px;
+                        transform: rotate(45deg);
+                        -webkit-transform: rotate(45deg);
+                        transition-property: border;
+                        transition-duration: 0.3s;
+                    }
+                }
 
                 .on-hover {
                     display: flex;
@@ -253,6 +293,15 @@ header {
                 p {
                     color: #FFD639;
                 }
+
+                a:hover {
+                    color: #FFD639;
+                }
+
+                .header-arrow {
+                    border: solid #FFD639;
+                    border-width: 0 3px 3px 0;
+                } 
             }
 
             .events:hover {
@@ -270,6 +319,7 @@ header {
                 border-bottom: 3px solid #FFD639;
                 a {
                     display: flex;
+                    flex-direction: column;
                     justify-content: flex-start;
                     text-decoration: none;
                     font-family: 'Cerebri Sans Pro';
@@ -522,7 +572,7 @@ header {
                     font-size: 40px;
                     line-height: 48px;
                     text-align: center;
-                    color: #3F455D;                    
+                    color: #3F455D;                   
                 }
 
                 p {
@@ -530,7 +580,11 @@ header {
                     font-family: Cerebri Sans Pro;
                     font-size: 15px;
                     line-height: 23px;
-                    color: #696969;                    
+                    color: #696969;
+                    span {
+                        color: #2e3244;
+                        font-weight: bold;
+                    }                     
                 }
             }
         }
